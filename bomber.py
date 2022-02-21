@@ -32,7 +32,7 @@ class bColors:
 
 
 def banner():
-    print(bColors.BLUE + '<<< Email-Bomber v2.0>>>')
+    print(bColors.BLUE + '<<< HI Friends>>>')
     print(bColors.YELLOW + r'''
   _
  | |
