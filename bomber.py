@@ -77,7 +77,7 @@ def send_email(to_email, from_email, password, subject, message, server="smtp.gm
         print(Fore.RED + f"Failed to send email: {e}")
 
 def main():
-    print(Fore.YELLOW + "=== Educational Email Sender ===")
+    print(Fore.YELLOW + "=== Email-Bomber ===")
     from_email = input("Enter your email address: ")
     password = input("Enter your email password: ")
     to_email = input("Enter the recipient's email address: ")
