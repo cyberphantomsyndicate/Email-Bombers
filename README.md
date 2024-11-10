@@ -43,13 +43,13 @@ To get the unlock code, follow these steps:
 1. **Clone the repository** to your local machine:
 
     ```bash
-    git clone https://github.com/cyberphantomsyndicate/email-bombers.git
+    git clone https://github.com/cyberphantomsyndicate/Email-bombers.git
     ```
 
 2. **Navigate to the project directory**:
 
     ```bash
-    cd Email-Bombers
+    cd Email-bombers
     ```
 
 3. **Run the tool** using Python:
