@@ -1,5 +1,5 @@
 # **Email Bomber Tool**  
-![Email Bomber Banner](https://via.placeholder.com/1500x500.png?text=Email+Bomber+Tool)  
+![Email Bomber Banner](https://images.unsplash.com/photo-1521747116042-5a810fda9664)  
 
 ## **Disclaimer**  
 **⚠️ Educational Purpose Only!**  
@@ -22,30 +22,41 @@ This **Email Bomber Tool** is created to demonstrate the basic working of **emai
 
 ---
 
-## **Installation**  
+## **Important Notes**  
+- This tool is intended for **educational purposes only**.  
+- **Do not use it for spamming or illegal activities**.  
+- **Ensure you have consent** from the recipient before using the tool on them.
+
+---
+
+## **Unlocking the Tool**  
+**You must unlock this tool to use it.**  
+To get the unlock code, follow these steps:
+
+1. **Contact us on Instagram** at [@cyberphantomsyndicate](https://instagram.com/cyberphantomsyndicate).
+2. **Send a message** asking for the unlock code.
+3. After receiving the unlock code from us, you can proceed to use the tool.
+
+---
+
+## **How to Run the Tool**  
 1. **Clone the repository** to your local machine:
 
     ```bash
     git clone https://github.com/cyberphantomsyndicate/email-bomber.git
     ```
 
-2. **Install dependencies** (Python 3.x):
+2. **Navigate to the project directory**:
 
     ```bash
-    pip install -r requirements.txt
+    cd Email-Bomber
     ```
 
----
+3. **Run the tool** using Python:
 
-## **How It Works**  
-The tool allows you to send multiple emails to a recipient by utilizing **SMTP servers**. You can specify the email content, the recipient's address, and how many emails you wish to send. It simulates an email bombardment for **educational purposes only**.
-
----
-
-## **Important Notes**  
-- This tool is intended for **educational purposes only**.  
-- **Do not use it for spamming or illegal activities**.  
-- **Ensure you have consent** from the recipient before using the tool on them.
+    ```bash
+    python bomber.py
+    ```
 
 ---
 
