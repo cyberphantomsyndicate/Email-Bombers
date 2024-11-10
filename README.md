@@ -1,25 +1,24 @@
-# **SMS Bomber Tool**  
-![SMS Bomber Banner](https://via.placeholder.com/1500x500.png?text=SMS+Bomber+Tool)  
+# **Email Bomber Tool**  
+![Email Bomber Banner](https://via.placeholder.com/1500x500.png?text=Email+Bomber+Tool)  
 
 ## **Disclaimer**  
 **⚠️ Educational Purpose Only!**  
-This tool has been created solely for educational purposes. **We do not endorse or encourage** any illegal activities using this tool.  
-**Using this tool for spamming, harassment, or any illegal activity is strictly prohibited**. If you choose to use this tool for illegal purposes, you are fully responsible for any consequences.  
-By using this tool, you agree to take full responsibility for your actions.
+This tool is developed **solely for educational purposes**. **We do not support or endorse** using this tool for any illegal or malicious activities.  
+**Using this tool for spamming, phishing, or any other form of unauthorized access is illegal** and can result in severe penalties.  
+By using this tool, you acknowledge that you are fully responsible for any consequences and you agree to comply with all local laws.
 
 ---
 
 ## **About**  
-This SMS Bomber tool is designed to understand the basics of how SMS bombers work for **educational purposes** only. This project provides hands-on experience with understanding **SMS-based vulnerabilities**, but it should never be used to harm others or violate laws.  
-Remember, with great knowledge comes great responsibility.
+This **Email Bomber Tool** is created to demonstrate the basic working of **email bombers** and to teach about **email vulnerabilities**. It is **NOT** intended for real-world use or for targeting others without their consent. The tool is meant to give learners an understanding of how such tools can be built for educational purposes, and to raise awareness about security.
 
 ---
 
 ## **Features**  
-- **SMS Bombing**: Automatically sends multiple SMS messages to the target number.
-- **Customizable Messages**: Allows you to send custom messages.
-- **Delay Between Messages**: You can specify the delay between each SMS to avoid immediate spam detection.
-- **Educational Use**: Intended for learning about SMS mechanisms and security.
+- **Multiple Email Bombing**: Send multiple emails in a short time span.
+- **Customizable Email Content**: Users can customize the subject and message content.
+- **Easy-to-Use Interface**: Simple command-line interface to get started.
+- **Educational Tool**: Designed for educational use and learning purposes only.
 
 ---
 
@@ -27,10 +26,10 @@ Remember, with great knowledge comes great responsibility.
 1. **Clone the repository** to your local machine:
 
     ```bash
-    git clone https://github.com/yourusername/sms-bomber.git
+    git clone https://github.com/cyberphantomsyndicate/email-bomber.git
     ```
 
-2. **Install the required dependencies** (Python 3.x):
+2. **Install dependencies** (Python 3.x):
 
     ```bash
     pip install -r requirements.txt
@@ -39,43 +38,36 @@ Remember, with great knowledge comes great responsibility.
 ---
 
 ## **How It Works**  
-This tool sends multiple messages to a given phone number. It uses a combination of public APIs to simulate the action of sending SMS messages to the target number. Be sure to use it **only in a legal and responsible manner**.
+The tool allows you to send multiple emails to a recipient by utilizing **SMTP servers**. You can specify the email content, the recipient's address, and how many emails you wish to send. It simulates an email bombardment for **educational purposes only**.
 
 ---
 
 ## **Important Notes**  
-- This tool is **NOT for real-world use** beyond educational purposes.
-- **Do not use this tool to target individuals or systems without consent**. Unauthorized use may be illegal depending on your location.
-- By using this tool, you agree to take full responsibility for your actions and acknowledge the risks involved.
+- This tool is intended for **educational purposes only**.  
+- **Do not use it for spamming or illegal activities**.  
+- **Ensure you have consent** from the recipient before using the tool on them.
 
 ---
 
 ## **Legal Disclaimer**  
-The use of this tool for **spamming**, **harassment**, or **fraudulent activities** is **illegal** and can lead to severe penalties. You are responsible for ensuring that your use complies with all applicable local laws and regulations.
-
----
-
-## **Contributing**  
-We welcome contributions! If you find a bug or want to improve this tool, feel free to open a **pull request** or create an issue.
+By using this tool, you **take full responsibility** for your actions. **Any illegal use** (such as sending unsolicited emails, spamming, or hacking) is prohibited and can have **serious legal consequences**.  
+Ensure that you comply with all applicable laws and regulations in your country or region.
 
 ---
 
 ## **Contact**  
-For questions or support, please contact:  
-**Email**: support@example.com  
-**Instagram**: [@yourinsta](https://instagram.com/yourinsta)
+For questions or support, you can reach out to us through the following channels:
 
----
-
-## **License**  
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- **GitHub**: [cyberphantomsyndicate](https://github.com/cyberphantomsyndicate)
+- **Instagram**: [@cyberphantomsyndicate](https://instagram.com/cyberphantomsyndicate)
 
 ---
 
 ## **⚠️ Use Responsibly! ⚠️**  
-Remember, knowledge is power, and it is our duty to use it ethically. This tool is for learning purposes only.
+Remember, ethical hacking means **learning responsibly and using knowledge for good**.  
+**Do not misuse this tool.**
 
 ---
 
-> **"With great power comes great responsibility."** – **Uncle Ben**
-
+> **"Knowledge is power, and with power comes responsibility."**  
+– **Uncle Ben**
