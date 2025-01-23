@@ -87,7 +87,7 @@ def main():
     subject = input("Enter the subject of the email: ")
     message = input("Enter the message content: ")
     try:
-        count = int(input("Enter the number of emails to send (educational limit): "))
+        count = int(input("Enter the number of emails to send: "))
     except ValueError:
         print(Fore.RED + "Invalid number entered. Exiting.")
         return
